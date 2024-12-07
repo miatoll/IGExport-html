@@ -1,7 +1,5 @@
 This Python script reads data from a IGExport CSV file and generates an HTML document that displays a list of users with their details, including avatars, usernames, full names, user IDs, and whether they are followed by the user.
 
-### Key Features:
-
  -  **CSV Reading**:
     
     -   The script reads the CSV file using Python's `csv.DictReader`.
