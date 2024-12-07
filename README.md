@@ -2,24 +2,27 @@ This Python script reads data from a IGExport CSV file and generates an HTML doc
 
 ### Key Features:
 
-1.  **CSV Reading**:
+ -  **CSV Reading**:
     
     -   The script reads the CSV file using Python's `csv.DictReader`.
     -   It expects columns: `Avatar`, `Username`, `Full Name`, `User ID`, and `Followed By You`.
-2.  **HTML Generation**:
+ -  **HTML Generation**:
     
     -   Creates a styled HTML document with a list of user details.
     -   Each user is represented by a card containing:
         -   A circular avatar image.
         -   Username, full name, user ID, and "Followed By You" status.
-3.  **Error Handling for Missing Avatars**:
+ -  **Error Handling for Missing Avatars**:
     
     -   If the `Avatar` field is empty, a placeholder image is used.
     -   The script uses `onerror` in the `<img>` tag to replace broken avatar links with a default placeholder.
-4.  **Diagnostics**:
+ -  **Diagnostics**:
     
     -   Includes debug prints (`print(row)`) to display each row of data being read from the CSV file.
     -   Logs a message when the `Avatar` field is empty for a specific user.
-5.  **Output**:
+ -  **Output**:
     
     -   The final HTML is saved to the specified file, ready to be opened in a web browser.
+ - **Starting**
+   - Place the IGexport CSV file in the root directory, rename it to `input.csv`, and then run `index.py` to generate a beautifully formatted `output.html` file containing your data
+
